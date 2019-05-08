@@ -8,9 +8,9 @@ function nestedTarget() {
 }
 
 function increseRankBy(n) {
-  const list = document.getElementById('app').querySelectorAll('ul.ranked-list li')
+  const list = document.querySelectorAll('ul.ranked-list li');
   
-  for(var i = 0; i < list.length; i++) {
+  for( var i = 0; i < list.length; i++) {
     list[i].innerHTML = parseInt(list[i].innerHTML) + n
   }
 }
